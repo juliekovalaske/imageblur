@@ -9,8 +9,14 @@ class Image
   end
 
   def output_image
-    puts "#{@image}"
+      @image.each do |row|
+        row.each do |i|
+          print i
+        end
+      puts "\n" 
+      end
   end
+
 
 end
 
